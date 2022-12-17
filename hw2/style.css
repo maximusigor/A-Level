@@ -1,0 +1,69 @@
+
+/* First level */
+blockquote {
+    color:green;
+}
+
+/* Second level */
+a[href^='https'] {
+    color: red;
+}
+
+.list > li:last-child a{
+    background-color: green;
+}
+
+.holder .list + p {
+    font-size: 26px;
+}
+
+/* Third level */
+h3:first-child {
+    color: pink;
+}
+
+#greycol {
+    color: grey;
+}
+
+div p:first-child {
+    color: red;
+}
+
+.text-box p:nth-last-child(2) {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+/* Fourth level */
+/* First option */
+.bg-box {   
+    width: 300px;
+    height: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    background: url(/img/dom.jpg) center / 250px 150px  no-repeat, 
+                left 0% / 5% 15% repeat-x url(img/lamp.png),
+                left 100% / 25% 35% repeat-x url(img/green.png),
+                left 5% / 3% 5% repeat-y url(img/hedgehog.webp),
+                right 5% / 5% 5% repeat-y url(img/donut.png),
+                green ;
+}
+
+/* Second option */ 
+/* Which option is correct first or second? */
+
+/* .bg-box {
+    height: 100vh;
+    background: url(/img/dom.jpg)no-repeat center,
+                url(/img/lamp.png) repeat-x,
+                url(/img/green.png) repeat-x bottom,
+                url(/img/donut.png) repeat-y right,
+                url(/img/hedgehog.webp) repeat-y left;
+    background-size: auto, 4%, 25%, 3%, 3%;
+    background-color: green;
+} */
