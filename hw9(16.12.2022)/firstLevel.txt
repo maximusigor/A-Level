@@ -1,0 +1,8 @@
+github all homeworks
+https://github.com/maximusigor/A-Level
+
+github lecture work 
+https://github.com/maximusigor/super_diffusion/blob/master/index.html
+
+remote server (cloned repository from github)
+http://homeworks.shilov0209.fe.a-level.com.ua
