@@ -1,9 +1,9 @@
 // Напиши скрипт, який розраховує індекс маси тіла людини. Для цього необхідно розділити вагу в кілограмах на квадрат висоти людини за метри.
-// let weight = '88.3';
-// let height = '1.75';
+let weight = Number('88.3');
+let height = Number('1.75');
 
-// const bmi = weight / (height * height);
-// console.log(bmi); // 28.8
+const bmi = weight / (height * height);
+console.log(bmi); // 28.8
 
 
 
@@ -31,11 +31,11 @@
 // 450 покаже 07:30
 // 1441 покаже 24:01
 
-// const totalMinutes = 70;
+// const totalMinutes = 1441;
 
 // const hours = Math.floor(totalMinutes / 60);
 // const minutes = totalMinutes % 60;
-// const formatted = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') ;
+// const formatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
 
 // console.log(formatted);
 
