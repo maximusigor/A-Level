@@ -1,0 +1,161 @@
+/* ----------Fonts---------- */
+@font-face {
+    font-family: 'FREESCPT';
+    src: url('fonts/FREESCPT.eot');
+    src: url('fonts/FREESCPT.eot') format('embedded-opentype'),
+         url('fonts/FREESCPT.woff2') format('woff2'),
+         url('fonts/FREESCPT.woff') format('woff'),
+         url('fonts/FREESCPT.ttf') format('truetype'),
+         url('fonts/FREESCPT.svg#FREESCPT') format('svg');
+}
+
+/* ----------Icons---------- */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?6jdr41');
+    src:  url('fonts/icomoon.eot?6jdr41#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?6jdr41') format('truetype'),
+      url('fonts/icomoon.woff?6jdr41') format('woff'),
+      url('fonts/icomoon.svg?6jdr41#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-linkedin:before {
+    content: "\e900";
+  }
+  .icon-twitter:before {
+    content: "\e901";
+  }
+  .icon-facebook:before {
+    content: "\e902";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-location2:before {
+    content: "\e948";
+  }
+  .icon-search:before {
+    content: "\e986";
+  }
+  .icon-circle-up:before {
+    content: "\ea41";
+  }
+  .icon-circle-right:before {
+    content: "\ea42";
+  }
+  .icon-circle-down:before {
+    content: "\ea43";
+  }
+  .icon-circle-left:before {
+    content: "\ea44";
+  }
+  .icon-google-plus3:before {
+    content: "\ea8d";
+  }
+  .icon-dribbble:before {
+    content: "\eaa7";
+  }
+  .icon-pinterest:before {
+    content: "\ead1";
+  }
+
+  /* ---------- Header ---------- */
+  .menu {
+    margin: 0;
+  }
+  .menu__item:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  .menu__link {
+    color: #747474;
+    font-weight: bold;
+    position: relative;
+  }
+  .menu__link:hover {
+    color: #5661D7;
+  }
+  .menu__link::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 2px;
+    background-color: #5661D7;
+    position: absolute;
+    left: 12%;
+    bottom: -2px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.menu__link:hover::after {
+  opacity: 1;
+}
+/* ---------- Section Offer ---------- */
+.offer {
+  background: url(../img/bg-01.jpg);
+  background-size: cover;
+  padding: 50px 0;
+}
+.button {
+  text-decoration: none;
+  color: #fff;
+}
+.form__input {
+  border: none;
+  color: #747474;
+  background-color: #F2F2F2;
+}
+.form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 35px 30px;
+}
+.form__title {
+  color: #5661D7;
+}
+.inform {
+  color: #fff;
+}
+.inform__text {
+  font-family: Freestyle script;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.inform__title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* ---------- Section Program ---------- */
+
+  /* ---------- Section Program ---------- */
+  .card {
+    flex-direction: unset;
+  }
+   /* ---------- Section gallery ---------- */
+  .gallery__item img {
+    max-width: 100%;
+  }
+  .gallery-select {
+    padding: 0;
+  }

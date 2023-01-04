@@ -1,0 +1,50 @@
+/* First level */
+.test-box {
+    width: 480px;
+    height: 310px;
+    padding: 30px 15px;
+    margin: 20px 10px 25px 15px;
+    border: solid 5px blue;
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+}
+
+/* Second level */
+.element {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px 10px;
+    margin-bottom: 30px;
+    border: dashed 2px red;
+    background-color: green;
+}
+
+/* Third level */
+.test-float {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+.test-float p {
+    text-align: justify;
+}
+
+.test-float > img {
+    float: left;
+    width: 300px;
+    margin: 0px 20px 20px 0px;
+}
+
+.test-float p > img {
+    float:right;
+    width: 250px;
+    margin: 20px 0px 20px 20px;
+}
