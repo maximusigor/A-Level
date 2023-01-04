@@ -31,13 +31,13 @@ console.log(bmi); // 28.8
 // 450 покаже 07:30
 // 1441 покаже 24:01
 
-// const totalMinutes = 1441;
+const totalMinutes = 1441;
 
-// const hours = Math.floor(totalMinutes / 60);
-// const minutes = totalMinutes % 60;
-// const formatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+const hours = Math.floor(totalMinutes / 60);
+const minutes = totalMinutes % 60;
+const formatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
 
-// console.log(formatted);
+console.log(formatted);
 
 
 //-----------------------------------
