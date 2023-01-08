@@ -114,6 +114,7 @@
 .offer {
   background: url(../img/bg-01.jpg);
   background-size: cover;
+  background-position: 67%;
   padding: 100px 0;
 }
 .overlay {
@@ -257,6 +258,9 @@
     background-color: #fff;
   }
   /* ---------- Section about ---------- */ 
+  .about {
+    padding: 100px 0;
+  }
   .slick-list {
     overflow: hidden;
     border-radius: 7px;
@@ -305,10 +309,12 @@
     background: url(../img/bg-02.jpg);
     background-size: cover;
     padding: 100px 0;
+    background-position: 48%;
   }
   .benefit {
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 50px;
     color: #fff;
   }
   .benefit__item {
@@ -317,6 +323,7 @@
     width: 70px;
     height: 70px;
     margin: 0 auto;
+    margin-bottom: 30px;
     line-height: 62px;
   }
   .benefit__title {

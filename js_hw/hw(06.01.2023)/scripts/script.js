@@ -10,12 +10,12 @@
 // 1) Створити цикл на 10 ітерацій. На кожній ітерації якщо i парне,то вивести в консоль слово Fiz, якщо i не парне, то вивести в консоль слово Buz, якщо i кратне цифрі 3, то вивести FizBuz.
 
 
-for( let i = 0; i < 10; i++){
+for(let i = 0; i < 10; i++){
 
     if(i % 2 == 0){
         console.log('Fiz');
 
-    } else if (i == 3) {
+    } else if (i % 3 === 0) {
         console.log('FizBuz');
 
     } else if (i % 2 != 0) {
@@ -29,7 +29,7 @@ function factorial(n) {
     return (n != 1) ? n * factorial(n - 1) : 1;
   }
   
-  console.log( factorial(10) );
+  console.log(factorial(10));
 
 
 // 3) У пачці паперу 500 аркушів. За тиждень в офісі витрачається 1200 аркушів. Яку найменшу кількість пачок потрібно купити в офіс на 8 тижнів?
@@ -89,17 +89,14 @@ function flatPositionChecker(flatNumber) {
 // 5) Вивести у консоль піраміду. Змінна вказує кількість рядків, з яких побудується піраміда. Піраміда повинна будуватися в однаковому візуальному вигляді між собою, але строго враховуючи кількість рядків
 
 
-function pyramid1(rows){
-    let nums = [];
-    
-        for(let i = 1; i <= rows; i++){
-         nums.push(i);
-          
-          let spaces = " ".repeat(rows - i);
-          let stars = nums.join(' ');
-    
-          console.log(spaces + stars);
-        }    
+function createPyramid(rows) {
+
+    for(let i = 1; i <= rows; i++){
+
+      let spaces = ' '.repeat(rows - i);
+      let stars = '*'. repeat(i * 2 - 1)
+      console.log(spaces + stars + spaces);
+
     }
-    
-pyramid1(5);
+  }
+  createPyramid(5);
