@@ -89,14 +89,14 @@ function flatPositionChecker(flatNumber) {
 // 5) Вивести у консоль піраміду. Змінна вказує кількість рядків, з яких побудується піраміда. Піраміда повинна будуватися в однаковому візуальному вигляді між собою, але строго враховуючи кількість рядків
 
 
-function createPyramid(rows) {
+function createPyramid(rows)
+{
+    for (let i = 0; i < rows; i++) {
+        let output = '';
+        for (let j = 0; j < rows - i; j++) output += ' ';
+        for (let k = 0; k <= i; k++) output += '* ';
+        console.log(output);  
+    } 
+}
 
-    for(let i = 1; i <= rows; i++){
-
-      let spaces = ' '.repeat(rows - i);
-      let stars = '*'. repeat(i * 2 - 1)
-      console.log(spaces + stars + spaces);
-
-    }
-  }
-  createPyramid(5);
+createPyramid(5);
