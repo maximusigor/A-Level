@@ -114,48 +114,213 @@
 .offer {
   background: url(../img/bg-01.jpg);
   background-size: cover;
-  padding: 50px 0;
+  padding: 100px 0;
+}
+.overlay {
+  background-color: rgba(86,97,215, 0.8);
+  width: 100%;
+  height: 100%;
+  margin: -100px 0;
+  padding: inherit;
 }
 .button {
   text-decoration: none;
+  border: 1px solid transparent;
   color: #fff;
+  background: #5661D7;
+  width: 160px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 15px;
+  transition: .3s;
+  display: block;
+}
+.button:hover {
+  color: #5661D7;
+  background: #fff;
+  border: 1px solid #5661D7;
+  box-sizing: border-box;
 }
 .form__input {
   border: none;
   color: #747474;
   background-color: #F2F2F2;
+  margin-bottom: 15px;
+  width: 240px;
+  height: 45px;
+  border-radius: 10px;
+  padding-left: 10px;
 }
 .form {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 35px 30px;
 }
 .form__title {
   color: #5661D7;
+  margin-bottom: 1.5rem;
 }
 .inform {
   color: #fff;
+  padding-left: 50px;
 }
 .inform__text {
   font-family: Freestyle script;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   line-height: 1.2;
 }
 
 .inform__title {
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 3.0rem;
+  line-height: inherit;
 }
 /* ---------- Section Program ---------- */
+.program {
+  padding: 100px 0;
+}
+.program__info h2 {
+  color: #5661D7;
+  text-transform: uppercase;
+}
+.program__info p {
+  color:#747474;
+  font-family: Freestyle script;
+  font-size: 2.4rem;
+}
+.card__text h5 {
+  text-transform: uppercase;
+  color: #747474;
+  font-weight: 700;
+}
+.card__text p {
+  line-height: normal;
+}
+.card__text p:first-of-type {
+  color: #747474;
+}
+.card__text p:last-of-type {
+  color: #B4B4B4;
+}
 
   /* ---------- Section Program ---------- */
   .card {
     flex-direction: unset;
+    box-shadow: 4px 4px 4px 1px rgb(68, 70, 87, 0.1);
+    margin-top: 20px;
+  }
+  .card__text{
+    padding: 0 11px 0 25px;
   }
    /* ---------- Section gallery ---------- */
+   .gallery {
+    padding: 100px 0;
+   }
   .gallery__item img {
     max-width: 100%;
   }
   .gallery-select {
     padding: 0;
+    position: relative;
+  }
+  
+  .gallery__overlay {
+    content: "\1f50d";
+    background-color: rgba(86,97,215, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gallery-select:hover .gallery__overlay  {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .icon-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  /* ---------- Section about ---------- */ 
+  .slick-list {
+    overflow: hidden;
+    border-radius: 7px;
+  }
+  .slick-track {
+    display: flex;
+  }
+  .about-us h2 {
+    color: #5661D7;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .about-us__slider .slick-arrow.slick-disabled {
+    opacity: 0.4;
+  }
+  .about-us__slider {
+    position: relative;
+    padding: 0px 15px;
+    min-width: 50%;
+  }
+  .about-us__slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    z-index: 10;
+    font-size: 0;
+    width: 25px;
+    height: 25px;
+  }
+  .about-us__slider .slick-arrow.slick-prev {
+    left: 0;
+    border: none;
+    background: url(../img/prev_arrow.png) 0 0 / 100% no-repeat;
+  }
+  .about-us__slider .slick-arrow.slick-next {
+    right: 0;
+    border: none;
+    background: url(../img/next_arrow.png) 0 0 / 100% no-repeat;
+  }
+  .about-us__slider__item {
+    text-align: center;
+  }
+  /* ---------- Section info ---------- */
+  .info {
+    background: url(../img/bg-02.jpg);
+    background-size: cover;
+    padding: 100px 0;
+  }
+  .benefit {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+  .benefit__item {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    line-height: 62px;
+  }
+  .benefit__title {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
   }
