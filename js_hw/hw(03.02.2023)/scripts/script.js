@@ -408,7 +408,40 @@
 // следующего объекта пользователю задается вопрос (используя confirm), хочет ли он продолжить 
 // это мучение ввод объектов. При утвердительном ответе, опять работает ввод любюго количества 
 // ключей для создания нового объекта.Функция должна возвращать созданный массив с объектами.
-
-function readArrayOfObjects() {
+// const newArr = [];
+// function readArrayOfObjects() {
+//     let key = prompt('Введите ключ.');
+//     let value = prompt('Введите значение.');
+//     let count = 0;
     
-}
+//     while(key && value){
+//         newArr[count] = [{key, value},];
+//         key = prompt('Введите ключ.');
+//         value = prompt('Введите значение.');
+//         count++;
+//     }
+//     confirm("Продолжим єто мучение?") ? readArrayOfObjects() : console.log(newArr);
+//     return newArr;
+// }
+
+// readArrayOfObjects();
+
+// 13) ромбик
+// Сформировать следующую строку - ромбик:
+
+  
+//  function  getDiamond(num) {
+
+//   return Array(num * 2-1).fill().map((_, i) => (
+//    i < num ?
+//      ('.'.repeat(num - i - 1) +
+//       '#'.repeat(2 * i + 1) +
+//       '.'.repeat(num - i - 1)) :
+//      ('.'.repeat(-(num - i - 1))+
+//       '#'.repeat(4 * num - 2 * i - 3)+
+//       '.'.repeat(-(num - i - 1)))
+//    )).join("\n");
+
+// }
+
+// console.log(getDiamond(6));
