@@ -247,9 +247,6 @@
     
 // }
 
-
-
-
 // const drink = prompt("Что вы любите пить")
 // noSwitch(drink, {
 //     воду: () =>  console.log('Самый здоровый выбор!'),
@@ -268,6 +265,7 @@
 }
 
 
+
 {
 // loops-homework
 
@@ -282,27 +280,30 @@
 
 }
 
-{
+
 // 2) Создайте пустой массив и добавляйте в него элементы, введенные пользователем, 
 // пока пользователь не нажмет Отмена в очередном prompt. Используйте push для удобства: 
 // push В массиве не должно быть null после работы цикла;
 
-// const newArr = [];
+// function createArray(){
+//     const newArr = [];
 
-// let enter = prompt('Что хотите написать в массивчик?','');
+//     let enter = prompt('Что хотите написать в массивчик?','');
+    
+//     while (enter){
+//         newArr.push(enter);
+//         enter = prompt('Что хотите написать в массивчик?','');
+//         console.log(newArr);
+//     }
 
-// while (enter){
-//     newArr.push(enter);
-//     enter = prompt('Что хотите написать в массивчик?','');
-//     console.log(newArr);
 // }
 
-}
+// createArray();
 
 
 {
 // 3) array fill nopush
-//    Сделайте предыдущее задание, не используя push, а обращаясь к элементам по индексу.
+//   Сделайте предыдущее задание, не используя push, а обращаясь к элементам по индексу.
 // const newArr = [];
 // let i = 0;
 // let enter = prompt('Что хотите написать в массивчик?','');
@@ -316,21 +317,22 @@
 
 }
 
-{
+
 // 4) infinite probability
 //     Создайте бесконечный цикл, который прерывается с помощью конструкции break, когда Math.random() > 0.9. 
 //     Код должен подсчитывать количество итераций и вывести это число с помощью alert.
-
-// let i = 0;
-// for(;;i++){
-//     if(Math.random() > 0.9){
-//         break;
-        
+// function createInfinityLoop() {
+//     let i = 0;
+//     for(;;i++){
+//         if(Math.random() > 0.9){
+//             break;
+            
+//         }
 //     }
+//     alert(`Єтот цикл колбасило: ${i} раз (а).`);
 // }
-// alert(`Єтот цикл колбасило: ${i} раз (а).`); 
 
-}
+// createInfinityLoop();
 
 {
 // 5) empty loop
@@ -389,30 +391,32 @@
 }
 
 
-{
+
 // 9) chess
 // Сформируйте строку с шахматной доской из вложенных циклов. 
 // Для перевода строки используйте \n. 
 // Код должен поддерживать легкое изменение размеров доски.
+// function createChessBoard() {
+//     const height = prompt('Введите висоту доски.');
+//     const width = prompt('Введите ширину доски.');
+//     let result = '';
 
-// const height = prompt('Введите висоту доски.');
-// const width = prompt('Введите ширину доски.');
-// let result = '';
-
-// for (let i = 1; i <= height; i++) {
-//   for (let j = 1; j <= width; j++) {
-//     if (i % 2 !== 0) {
-//       result += j % 2 === 0 ? '.' : '#';
-//     } else {
-//         result += j % 2 === 0 ? '#' : '.';
+//     for (let i = 1; i <= height; i++) {
+//     for (let j = 1; j <= width; j++) {
+//         if (i % 2 !== 0) {
+//         result += j % 2 === 0 ? '.' : '#';
+//         } else {
+//             result += j % 2 === 0 ? '#' : '.';
+//         }
 //     }
-//   }
-//   result += '\n';
+//     result += '\n';
+//     }
+
+//     console.log(result);
 // }
 
-// console.log(result);
+// createChessBoard();
 
-}
 
 {
 // 10)cubes
@@ -469,13 +473,14 @@
 // function readArrayOfObjects() {
 //     let key = prompt('Введите ключ.');
 //     let value = prompt('Введите значение.');
-//     let count = 0;
+//     // let count = 0;
     
 //     while(key && value){
-//         newArr[count] = {key, value};
+//         // newArr[count] = [{key, value}];
+//         newArr.push({[key]:value});
 //         key = prompt('Введите ключ.');
 //         value = prompt('Введите значение.');
-//         count++;
+//         // count++;
 //     }
 //     confirm("Продолжим єто мучение?") ? readArrayOfObjects() : console.log(newArr);
 //     return newArr;
@@ -507,26 +512,4 @@
 
 // console.log(getDiamond(6));
 
-}
-
-{
-// 14) DOM: multiply table
-// Сделать таблицу умножения, используя DOM createElement и innerText. 
-// Создайте таблицу, вложенные строки и ячейки в циклах.
-
-// function crTable() {
-//     let tAdd = document.getElementById('tableU');
-//     let table = '<table border=1><tr>';
-//     for (let x = 1; x < 11; x++) {
-//       for (let y = 1; y < 11; y++) {
-//         let el = '<td>' + x + 'x' + y + ' = ' + x * y + '</td>';
-//         table += el;
-//       }
-//       table += '</tr><tr>';
-//     }
-//     table += '</tr></table>';
-//     console.log(table);
-//     tAdd.innerHTML = table;
-//   }
-// crTable();
 }
