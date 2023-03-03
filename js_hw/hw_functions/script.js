@@ -6,7 +6,7 @@
 
 // function createPerson(name, surname) {
 
-//     const person = {
+//     return  {
 //         name,
 //         surname,
 //         getFullName() {
@@ -14,10 +14,9 @@
 //             if(this.fatherName) {
 //                 fullName += ` ${this.fatherName}`
 //             }
-//             return fullName;
+//             console.log(fullName);
 //         }
 //     } 
-//     return person;
 // }
 
 
@@ -27,8 +26,8 @@
 
 // a.fatherName = 'Иванович' //Вася Иванович Пупкин
 // b.fatherName = 'Ивановна'
-// console.log(a.getFullName()) //Вася Пупкин Иванович
-// console.log(b.getFullName())
+// a.getFullName() //Вася Пупкин Иванович
+// b.getFullName()
 
 
 // 2)createPersonClosure
@@ -106,6 +105,7 @@ function createPersonClosure(name, surname) {
 
     function setFullName(newFullName) {
        [surname, name, fatherName] = newFullName.split(' ');
+       return `${surname} ${name} ${fatherName}`
     }
 
     return {
@@ -130,4 +130,8 @@ a.setAge(15)
 a.setAge(150) //не работает
 
 b.setFullName("Петрова Анна Николаевна")
+console.log(b.getName());
 console.log(b.getFatherName()) //Николаевна
+console.log(b.getFullName()) //Анна Петрова Николаевна 
+
+

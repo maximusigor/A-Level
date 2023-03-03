@@ -488,6 +488,20 @@
 
 // readArrayOfObjects();
 
+// const newArr = [];
+// function readArrayOfObjects() {
+//     let key;
+//     let value;
+    
+//     newArr.push({[key= prompt('Введите ключ.')]: value = prompt('Введите значение.')});
+//     return confirm("Продолжим єто мучение?")
+//     ? readArrayOfObjects()
+//     : console.log('Ваши ключи и значения: ' + JSON.stringify(newArr));
+    
+// }
+
+// readArrayOfObjects();
+
 }
 
 
