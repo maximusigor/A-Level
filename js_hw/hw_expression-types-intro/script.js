@@ -42,8 +42,24 @@
 // Создайте из них CSS-цвет в формате #RRGGBB используя шестнадцатиричную систему счисления. 
 // Значения меньше 16ти пока можно не учитывать.
 
-// const red = +prompt('Введите число', '');
-// const green = +prompt('Введите число', '');
-// const blue = +prompt('Введите число', '');
+// const red = Number(prompt('Введите число от 0 до 255', '')).toString(16);
+// const green = Number(prompt('Введите число от 0 до 255', '')).toString(16);
+// const blue = Number(prompt('Введите число от 0 до 255', '')).toString(16);
+
+// const cssColor = `#${red}${green}${blue}`;
+
+// console.log(cssColor);
+
+// 6)Number: flats
+// Сделайте калькулятор, который позволит вам исходя из информации о количества 
+// этажей в доме и количества квартир на этаже находить подъезд и этаж определенной 
+// квартиры по её номеру. Например для 9этажного дома по 4 квартиры на этаж 
+// 81 квартира находится на 3м этаже третьего подъезда.
 
 
+// const floors = +prompt('Введите сколько этажей в доме');
+// const appAtFloor = +prompt('Введите количество квартир на этаже');
+// const numberApp = +prompt('Введите номер квартиры');
+// const entrance = Math.floor(numberApp / (floors * appAtFloor)) + 1;
+// const result = Math.ceil((numberApp - (entrance - 1) * floors * appAtFloor) / appAtFloor);
+// console.log(`Квартира № ${numberApp} находится в подъезде № ${entrance} на ${result} этaже.`);
